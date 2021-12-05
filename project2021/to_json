@@ -1,0 +1,13 @@
+import json
+from products import nounlist2
+from price import nounlist1
+
+
+def convertToJSON():
+    with open("price.json", "w") as write_file:
+        json.dump(nounlist1, write_file)
+
+
+def convertInJSON():
+    with open("products.json", "w") as write_file:
+        json.dump(nounlist2, write_file)
