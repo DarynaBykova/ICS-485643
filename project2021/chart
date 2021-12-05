@@ -1,0 +1,25 @@
+import matplotlib.pyplot as plt
+
+potato_price = [37.23, 40.0, 43.25]
+cabbage_price = [24.95, 35.73, 35.63]
+onion_price = [49.15, 51.58, 54.13]
+honey_price = [929.15, 996.25, 1003.75]
+garlic_price = [280.6, 311.58, 315.4]
+apple_price = [73.73, 87.35, 92.80]
+year = ["2013", "2014", "2015"]
+
+plt.plot(year, potato_price, label="Картопля")
+plt.plot(year, cabbage_price, label="Капуста")
+plt.plot(year, onion_price, label="Цибуля")
+plt.plot(year, honey_price, label="Мед")
+plt.plot(year, garlic_price, label="Часник")
+plt.plot(year, apple_price, label="Яблука")
+plt.xlabel("Рік")
+plt.ylabel("Ціна")
+plt.title('Графік росту цін')
+plt.legend()
+plt.grid(True)
+
+
+def showplot():
+    plt.show()
